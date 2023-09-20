@@ -1,0 +1,46 @@
+.cards-container{ 
+    display: flex;
+   flex-direction: row;
+   justify-content:space-evenly;
+   flex-wrap: wrap;
+   margin: 20px;
+} 
+.top-heading{
+    text-align: center;
+    margin: 35px;
+}
+.prevbtn{
+    color:white;
+    background-color: rgb(106, 188, 236);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+border: none;
+}
+.nextbtn{
+    color:white;
+    background-color: rgb(106, 188, 236);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+ border: none;
+}
+.btn-container{
+    display:flex ;
+    justify-content : space-between;
+    margin: 20px;
+}
+.prevbtn:hover{
+    color:rgb(56, 56, 56);
+    cursor: pointer;
+   
+}
+.nextbtn:hover{
+    color:rgb(57, 57, 57);
+    cursor: pointer;
+   
+}
