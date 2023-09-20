@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Croissant+One&family=Mukta:wght@300&family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: rgb(170, 123, 6);
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
+    display:flex ;
+    justify-content: space-around;
+
+}
+.nav_list li a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+.navbar li{
+    margin:  20px;
+padding: 10px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+
+}
+.navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.navbar ul li a:active{ 
+    color: rgb(255, 255, 255);
+}
+.newsname{
+    font: weight 8px;
+    font-size: 60px;
+    font-family: 'Black Ops One', cursive;
+}
+.navbar:hover{
+    background-color: rgb(220, 161, 12);
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+    transition: 1s ease-in;
+  
+
+}
