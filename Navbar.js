@@ -7,7 +7,7 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <div>
+        <div >
             <nav className='navbar'>
                 <p className='newsname' > 28-News</p>
                 <ul className='nav_list'>
