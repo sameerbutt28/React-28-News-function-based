@@ -13,7 +13,7 @@ const [totalResults, setTotalResults] = useState(0)
    
 
     const updateNews= async ()=> {
-        let url = `https://newsapi.org/v2/everything?q=${props.category}&from=2023-08-31&to=2023-08-31&sortBy=popularity?category=${props.category}&apiKey=2c649df290b3441db496a9e27cc18e34&page=${page}&pagesize=${props.pageSize} `;
+        let url = `https://newsapi.org/v2/everything?q=${props.category}&apiKey=2c649df290b3441db496a9e27cc18e34`;
 setLoading(true);
         let data = await fetch(url);
         let parsedData = await data.json();
@@ -29,7 +29,7 @@ setLoading(true);
     )
    const fetchMoreData = async () => {
        setPage(page + 1)
-        let url = `https://newsapi.org/v2/everything?q=${props.category}&from=2023-08-31&to=2023-08-31&sortBy=popularity?&apiKey=2c649df290b3441db496a9e27cc18e34&page=${page}&pagesize=${props.pageSize} `;
+        let url = `https://newsapi.org/v2/everything?q=${props.category}&apiKey=2c649df290b3441db496a9e27cc18e34`;
         let data = await fetch(url);
         let parsedData = await data.json();
         setArticles(articles.concat(parsedData.articles));
@@ -71,11 +71,11 @@ setLoading(true);
         )
 }
 
-News.defaultProps={
-    country:'in',
-    pageSize: 8,
-    category: 'general',
-}
+// News.defaultProps={
+//     country:'in',
+//     pageSize: 8,
+//     category: 'general',
+// }
 // News.propTypes ={
 //     country: PropTypes.string,
 //     pageSize: PropTypes.number,
